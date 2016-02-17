@@ -176,11 +176,11 @@ http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 
 ###[decodeURI()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI)
 
-`decodeURI()` Allows us to 'decode' a string encode by `encodeURI()`
+`decodeURI()` Allows us to 'decode' a string encoded by `encodeURI()`
 
 ###[encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) y [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent)
 
-`encodeURIComponent()` (and `decodeURIComponent()`) works the same than
+`encodeURIComponent()` (and `decodeURIComponent()`) works like
 `encodeURI()` but this function encodes (or decodes) ALL transformable characters
 
 ```javascript
@@ -207,7 +207,7 @@ http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 
 ###alert()
 
-`alert()` displays a window on the browser with a string of text
+`alert()` displays a window on the browser with a string of text 
 `alert()` is not part of the JS core but is available in all browsers
 
 WARNING! `alert()` blocks (stops) the code execution until the message is acknowledged by the user
@@ -227,7 +227,7 @@ In Javascript variables are defined in the function scope (and not in the block 
 
 ## Callback Functions
 
-_Functions in Javascript are data (values)_, which means they can be assigned to variables in the same way we do with other values (and manage them as variables)
+_Functions in Javascript are data (values)_, which means that they can be assigned to variables in the same way we do with other values (and manage them as variables)
 
 ```javascript
 function f(){ return 1; }
@@ -294,7 +294,7 @@ function f(){
 <sub>[http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx](http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx)</sub>  
 <sub>[http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/](http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/)</sub>  
 
-Functions have what is called as **lexical scope** which means they create their scope (which variables they have access to) when they are defined, not when they are executed
+Functions have what is called a **lexical scope** which means that they create their scope (which variables they have access to) when they are defined, not when they are executed
 
 ```javascript
 >>> function f1(){ var a = 1; return f2(); }
