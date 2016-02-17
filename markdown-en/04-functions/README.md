@@ -32,9 +32,9 @@ To call a function we only need to write its name followed by some parameters (o
 3
 ```
 
-<sub>[https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope)</sub>
-<sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)</sub>
-<sub>[https://bonsaiden.github.io/JavaScript-Garden/#function](https://bonsaiden.github.io/JavaScript-Garden/#function)</sub>
+<sub>[https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope)</sub>  
+<sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)</sub>  
+<sub>[https://bonsaiden.github.io/JavaScript-Garden/#function](https://bonsaiden.github.io/JavaScript-Garden/#function)</sub>  
 
 ## Parameters
 
@@ -210,7 +210,7 @@ http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 `alert()` displays a window on the browser with a string of text
 `alert()` is not part of the JS core but is available in all browsers
 
-WARNING! `alert()` blocks (stops) the code execution until the message is accepted by the user
+WARNING! `alert()` blocks (stops) the code execution until the message is acknowledged by the user
 
 
 <br/>
@@ -290,9 +290,9 @@ function f(){
 ```
 
 <sub>[http://stackoverflow.com/questions/1484143/scope-­‐chain-­‐in-­‐javascript](http://stackoverflow.com/questions/1484143/scope-­‐chain-­‐in-­‐javascript)</sub>
-<sub>[http://www.digital-­‐web.com/articles/scope_in_javascript/](http://www.digital-­‐web.com/articles/scope_in_javascript/)</sub>
-<sub>[http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx](http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx)</sub>
-<sub>[http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/](http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/)</sub>
+<sub>[http://www.digital-­‐web.com/articles/scope_in_javascript/](http://www.digital-­‐web.com/articles/scope_in_javascript/)</sub>  
+<sub>[http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx](http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx)</sub>  
+<sub>[http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/](http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/)</sub>  
 
 Functions have what is called as **lexical scope** which means they create their scope (which variables they have access to) when they are defined, not when they are executed
 
@@ -323,9 +323,9 @@ function f() {
 f();
 ```
 
-<sub>[https://developer.mozilla.org/en/JavaScript/Guide/Closures](https://developer.mozilla.org/en/JavaScript/Guide/Closures)</sub>
-<sub>[http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope](http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope)</sub>
-<sub>[http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx](http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx)</sub>
+<sub>[https://developer.mozilla.org/en/JavaScript/Guide/Closures](https://developer.mozilla.org/en/JavaScript/Guide/Closures)</sub>  
+<sub>[http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope](http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope)</sub>  
+<sub>[http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx](http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx)</sub>  
 
 A **closure** is created when a function maintains a link with the scope of the father, even after the parent function has finished
 
@@ -367,10 +367,10 @@ function f(arg) {
 >>> m();
 ```
 
-<sub>[http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping](http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping)</sub>
-<sub>[http://blog.morrisjohns.com/javascript_closures_for_dummies.html](http://blog.morrisjohns.com/javascript_closures_for_dummies.html)</sub>
-<sub>[http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work](http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work)</sub>
-<sub>[http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/](http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/)</sub>
+<sub>[http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping](http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping)</sub>  
+<sub>[http://blog.morrisjohns.com/javascript_closures_for_dummies.html](http://blog.morrisjohns.com/javascript_closures_for_dummies.html)</sub>  
+<sub>[http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work](http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work)</sub>  
+<sub>[http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/](http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/)</sub>  
 <sub>[http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures](http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures)</sub>
-<sub>[http://jibbering.com/faq/notes/closures/](http://jibbering.com/faq/notes/closures/)</sub>
-<sub>[http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm](http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm)</sub>
+<sub>[http://jibbering.com/faq/notes/closures/](http://jibbering.com/faq/notes/closures/)</sub>  
+<sub>[http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm](http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm)</sub>  
