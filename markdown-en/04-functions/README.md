@@ -7,25 +7,24 @@ function sum(a, b) {
 }
 ```
 
-**funciones** allow us to group several lines of code under one name.
-In this way, we can reuse this code, by invoking the name of the funtion.
+**functions** allow us to group several lines of code under a single name.
+This way, we can reuse this code, by invoking the name of the function.
 
-Function parts are:
+They consist of the following parts:
 
 - The `function` sentence
 - The function _name_ (_sum_)
 - _Parameters_ (arguments) expected by the function (_a_ and _b_)
 A function can accept zero or more arguments separated by commas
 - A code block, also called _body of the function_
-- _`return`_ sentence  
-A function always returns a value.  
-If it doesn't return explicitly a value, implicitly returns the value 
-`undefined`  
+- _`return`_ sentence
+A function always returns a value.
+When it does not return explicitly a value, implicitly returns the value `undefined`
 
-A function can _only return one value._  
-If it need to return more that a value, it can return an array or an object with those values
+A function can _only return one value._
+When it needs to return more than a value, it can return an array or an object with those values
 
-To call a function we only need to write its name followed by some parameters (or nothing) between parenthesis
+To call a function we only need to write its name followed by some parameters (or none) between parenthesis
 
 ```javascript
 >>> var result = sum(1, 2);
@@ -33,13 +32,13 @@ To call a function we only need to write its name followed by some parameters (o
 3
 ```
 
-<sub>[https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope)</sub>  
-<sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)</sub>  
-<sub>[https://bonsaiden.github.io/JavaScript-Garden/#function](https://bonsaiden.github.io/JavaScript-Garden/#function)</sub>  
+<sub>[https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope)</sub>
+<sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)</sub>
+<sub>[https://bonsaiden.github.io/JavaScript-Garden/#function](https://bonsaiden.github.io/JavaScript-Garden/#function)</sub>
 
 ## Parameters
 
-A function can be defined to not require parameters, but if they're required and they're passed in the call of the function, Javascript will assign to them the value `undefined`
+A function can be defined to not require parameters, but if they are required and they are not provided in the call of the function, Javascript will assign the value `undefined` to them
 
 If the function receives more parameters than expected, it will simply ignore them
 
@@ -73,8 +72,8 @@ These pre-defined functions are (among others):
 
 ###[parseInt()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/parseInt)
 
-`parseInt()` takes a value and tries to transform it in an integer 
-If the transformation fails it returns `NaN`.  
+`parseInt()` takes a value and tries to transform it into an integer
+If the transformation fails it returns `NaN`.
 `parseInt()` can take a second optional parameter that sets the numerical base of the number passed as first argument (decimal, hexadecimal, binary, etc…)
 
 ```javascript
@@ -88,7 +87,7 @@ NaN
 123
 ```
 
-It's recommended especifying always the base (usually _10_) to [avoid issues](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#Octal_interpretations_with_no_radix) with the interpretation
+It is recommended to especify always the expected base (usually _10_) to [avoid interpretation issues](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#Octal_interpretations_with_no_radix)
 
 ```javascript
 >>> parseInt(" 0xF", 16);
@@ -119,7 +118,7 @@ It's recommended especifying always the base (usually _10_) to [avoid issues](ht
 
 ###[parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
 
-`parseFloat()` takes a value and tries to transform it in a float number (woth decimals).
+`parseFloat()` takes a value and tries to transform it into a float number (with decimals).
 
 ```javascript
 >>> parseFloat('123')
@@ -166,8 +165,8 @@ false
 
 ###[encodeURI()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI)
 
-`encodeURI()` allow us to 'escape' (codify) a URL replacing some characters by its related escape sequence (UTF-­8 ).
-_encodeURI()_ returns an usable URL (only codifies some characters)
+`encodeURI()` allows us to 'escape' (encode) a URL replacing some characters by its related escape sequence (UTF-­8 ).
+_encodeURI()_ returns an usable URL (only encodes some characters)
 
 ```javascript
 >>> var url = 'http://www.packtpub.com/scr ipt.php?q=this and that';
@@ -177,12 +176,12 @@ http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 
 ###[decodeURI()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI)
 
-`decodeURI()` Allow us to 'decodify' a string codified by `encodeURI()`
+`decodeURI()` Allows us to 'decode' a string encode by `encodeURI()`
 
 ###[encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) y [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent)
 
 `encodeURIComponent()` (and `decodeURIComponent()`) works the same than
-`encodeURI()` but this function codifies (or decodifies) ALL transformable characters
+`encodeURI()` but this function encodes (or decodes) ALL transformable characters
 
 ```javascript
 >>> encodeURIComponent(url);
@@ -191,12 +190,12 @@ http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 
 ###[eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval)
 
-`eval()` takes a text and execute it as Javascript code
+`eval()` takes a text and executes it as Javascript code
 
-`eval()` shouldn't be used because of 2 reasons:  
+`eval()` should not be used due the following reasons:
 
-- _Perfomance_: It's much more slower evaluatin "live" code than having it directly in the script
-- _Security_: Taking into account that every thing passed as a parameter can be a security hole.  
+- _Perfomance_: It is much more slower evaluating "live" code than having it directly in the script
+- _Security_: Be aware that every element passed as a parameter could be a security hole in your application
 
 ```javascript
 >>> eval('var ii = 2;')
@@ -208,20 +207,20 @@ http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 
 ###alert()
 
-`alert()` display a window w/ some stirng
-`alert()` is not part of the JS core but is available in all the browsers
+`alert()` displays a window on the browser with a string of text
+`alert()` is not part of the JS core but is available in all browsers
 
-¡OJO! `alert()` blocks (stop) the code until the message is accepted
+WARNING! `alert()` blocks (stops) the code execution until the message is accepted by the user
 
 
 <br/>
 
-## Functions Scope
+## Function Scope
 
-In Javascript variables are defined in the function scope (and not in the block scope as it happen in other languages)  
+In Javascript variables are defined in the function scope (and not in the block scope as it happens in other programming languages)
 
-- **Global variables** are those defined out of any function
-- **Local variables** are those defined inside of a function 
+- **Global variables** are those defined outside any function
+- **Local variables** are those defined inside a function
 
 
 <br/>
@@ -253,7 +252,7 @@ true
 3
 ```
 
-**Anonimous functions** are those that doesn't have a name and can be used to:
+**Anonymous functions** are those that does not have a name and can be used to:
 
 - Pass that function as an argument of a function
 - Define a function and execute it inmediately
@@ -262,7 +261,7 @@ true
 >>> function(a){ return a; }
 ```
 
-When we pass a function A as an argument of another function B and B executes A, we tell that A is a **[callback function](http://stackoverflow.com/questions/483073/getting-­‐a-­‐better-­‐understanding-­‐of-­‐callback-­‐functions-­‐in-­‐javascript)**
+When we pass a function A as an argument of another function B and B executes A, we say that A is a **[callback function](http://stackoverflow.com/questions/483073/getting-­‐a-­‐better-­‐understanding-­‐of-­‐callback-­‐functions-­‐in-­‐javascript)**
 
 ```javascript
 >>> function invoke_and_add(a, b){ return a() + b(); }
@@ -290,12 +289,12 @@ function f(){
 }
 ```
 
-<sub>[http://stackoverflow.com/questions/1484143/scope-­‐chain-­‐in-­‐javascript](http://stackoverflow.com/questions/1484143/scope-­‐chain-­‐in-­‐javascript)</sub>  
-<sub>[http://www.digital-­‐web.com/articles/scope_in_javascript/](http://www.digital-­‐web.com/articles/scope_in_javascript/)</sub>  
-<sub>[http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx](http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx)</sub>  
-<sub>[http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/](http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/)</sub>  
+<sub>[http://stackoverflow.com/questions/1484143/scope-­‐chain-­‐in-­‐javascript](http://stackoverflow.com/questions/1484143/scope-­‐chain-­‐in-­‐javascript)</sub>
+<sub>[http://www.digital-­‐web.com/articles/scope_in_javascript/](http://www.digital-­‐web.com/articles/scope_in_javascript/)</sub>
+<sub>[http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx](http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx)</sub>
+<sub>[http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/](http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/)</sub>
 
-Functions have what is called as **lexical scope** which means they create theis scope (which variables can they access) when they are defined, not when they are executed
+Functions have what is called as **lexical scope** which means they create their scope (which variables they have access to) when they are defined, not when they are executed
 
 ```javascript
 >>> function f1(){ var a = 1; return f2(); }
@@ -324,11 +323,11 @@ function f() {
 f();
 ```
 
-<sub>[https://developer.mozilla.org/en/JavaScript/Guide/Closures](https://developer.mozilla.org/en/JavaScript/Guide/Closures)</sub>  
-<sub>[http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope](http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope)</sub>  
-<sub>[http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx](http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx)</sub>  
+<sub>[https://developer.mozilla.org/en/JavaScript/Guide/Closures](https://developer.mozilla.org/en/JavaScript/Guide/Closures)</sub>
+<sub>[http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope](http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope)</sub>
+<sub>[http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx](http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx)</sub>
 
-A **closure** is created when a function maintains a link with the scope of the father, even after the parent function has finished 
+A **closure** is created when a function maintains a link with the scope of the father, even after the parent function has finished
 
 ```javascript
 function f(){
@@ -368,10 +367,10 @@ function f(arg) {
 >>> m();
 ```
 
-<sub>[http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping](http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping)</sub>  
-<sub>[http://blog.morrisjohns.com/javascript_closures_for_dummies.html](http://blog.morrisjohns.com/javascript_closures_for_dummies.html)</sub>  
-<sub>[http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work](http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work)</sub>  
-<sub>[http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/](http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/)</sub>  
-<sub>[http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures](http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures)</sub>  
-<sub>[http://jibbering.com/faq/notes/closures/](http://jibbering.com/faq/notes/closures/)</sub>  
-<sub>[http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm](http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm)</sub>  
+<sub>[http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping](http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping)</sub>
+<sub>[http://blog.morrisjohns.com/javascript_closures_for_dummies.html](http://blog.morrisjohns.com/javascript_closures_for_dummies.html)</sub>
+<sub>[http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work](http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work)</sub>
+<sub>[http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/](http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/)</sub>
+<sub>[http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures](http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures)</sub>
+<sub>[http://jibbering.com/faq/notes/closures/](http://jibbering.com/faq/notes/closures/)</sub>
+<sub>[http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm](http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm)</sub>
